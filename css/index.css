@@ -91,15 +91,15 @@ filter: opacity(70%);
 
 article {
 	display: grid;
-	grid-template-columns: 1fr 0.5in [start] minmax(0, 7.5in) [end] 0.5in 1fr;
-	background-color: lightcyan;
+	grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+	margin-bottom: 5px;
+	padding: 0.5in 0;
+	background-color: grey;
 	filter: opacity(50%);
-	height: 100vh; /* temp fix */
-	margin-bottom: 0.5in;
 }
 
 article * { grid-column: start / end; }
 
 @media (max-width: 8.5in) {
-	article { grid-template-columns: 1fr 5% [start] minmax(0, 7.5in) [end] 5% 1fr; }
-}n: 1 / 3; }
+	article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr; }
+}/ 3; }
